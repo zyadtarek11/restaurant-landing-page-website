@@ -74,3 +74,53 @@ nav{
     top: -0.6rem; /* Positions counter slightly above the basket icon */
     right: -0.6rem; /* Positions counter slightly to the right of the basket icon */
 }
+.hero{
+ margin: 4rem;
+}
+.content_main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.content{
+    width: 30rem;
+    position: relative;
+}
+.content span{
+    color:#EA0000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    line-height: normal;
+}
+.content h3{
+    font-family: "Abhaya Libre ExtraBold";
+    font-size:9rem ; 
+    font-style: normal;
+    font-weight: 800;
+     line-height: normal;
+   color:#EA0000;
+}
+.content p{
+    font-size: 20px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    color: #2A333E;
+}
+
+.content .RectangleOne{
+    width: 22rem;
+    z-index: -1;
+    position: absolute;
+    right:12.5rem;
+    top: 22rem;
+}
+.content .RectangleTwo{
+    width: 22rem;
+    z-index: -1;
+    position: absolute;
+    left:9rem;
+    top: 22rem;
+}
