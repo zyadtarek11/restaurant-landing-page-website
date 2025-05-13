@@ -1,0 +1,76 @@
+/* Reset default browser styles to ensure consistent rendering across different browsers */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Set the main background color for the entire page */
+body{
+    background-color: #FFFFFF;
+}
+/* Navigation bar styling - uses flexbox to create a horizontal layout with space between logo, menu items, and icons */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+/* Logo styling - sets specific dimensions for the restaurant logo */
+.logo a img {
+    width: 7rem;
+    height: 2rem;
+}
+
+/* Navigation menu container - uses flexbox to arrange menu items horizontally with equal spacing */
+.nav-items ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem; /* Creates space between each menu item */
+}
+/* Remove default bullet points from navigation list items */
+.nav-items ul li{
+    list-style: none;
+}
+/* Styling for navigation menu links (menu, about us, our specials, etc.) */
+.nav-items ul li a{
+    text-decoration: none; /* Removes underline from links */
+    color:#2A333E; /* Dark gray color for text */
+    font-family: Poppins, sans-serif; /* Uses Poppins font imported in HTML */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500; /* Medium font weight */
+    line-height: normal;
+}
+/* Container for the utility icons (search, basket, profile) in the navigation bar */
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem; /* Space between each icon */
+}
+/* Specific styling for the shopping basket icon (second icon in the container) */
+.icons a:nth-child(2) {
+    text-decoration: none;
+    color: #2A333E;
+    position: relative; /* Enables absolute positioning of the counter badge */
+}
+/* Shopping basket counter badge - shows number of items in cart */
+.counter{
+    position: absolute; /* Positions the counter relative to its parent (basket icon) */
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%; /* Creates a circular shape */
+    background-color: #EA0000; /* Red background for visibility */
+    color: #FFF; /* White text */
+    font-size: 0.7rem; 
+    font-family: poppins, sans-serif;
+    font-weight: 700; /* Bold text for better readability */
+    text-align: center;
+    /* line-height: normal sets the line height to a reasonable default value, 
+       typically around 1.2 times the font size */
+    line-height: normal;
+    top: -0.6rem; /* Positions counter slightly above the basket icon */
+    right: -0.6rem; /* Positions counter slightly to the right of the basket icon */
+}
